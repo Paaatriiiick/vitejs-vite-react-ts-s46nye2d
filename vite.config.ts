@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vitejs-vite-react-ts-s46nye2d/',
+  base: '/compendio-matematicas/',
   plugins: [react()],
 });
