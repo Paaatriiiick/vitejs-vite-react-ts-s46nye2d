@@ -669,7 +669,7 @@ function UnitView({ unit, blockColor, onBack }) {
       </button>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 10, flexWrap: "wrap", alignItems: "center" }}>
-        <Badge text={unit.id} color={blockColor} />
+        <Badge text={unit.id} color={blockColor} small={false} />
         <Badge text={unit.phase} color={phaseColors[unit.phase] || C.slate} small />
       </div>
 
@@ -690,7 +690,7 @@ function UnitView({ unit, blockColor, onBack }) {
         📖 CONTENIDO
       </div>
       {unit.content.map((item, i) => (
-        <Card key={i}>
+        <Card key={i} style={{}}>
           <ContentSection item={item} blockColor={blockColor} />
         </Card>
       ))}
